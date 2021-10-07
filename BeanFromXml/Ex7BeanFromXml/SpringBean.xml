@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-cintext-4.0.xsd">
+        
+         <bean id="engine" class="com.vaishnavi.example.Engine">
+          <property name="engineid" value="101"></property>
+         <property name="company" value="Ford"></property>
+         <property name="price" value="1000"></property>
+         </bean>
+         
+         <bean id="car" class="com.vaishnavi.example.Car">
+          <property name="carname" value="Ford ABC"></property>
+         <property name="color" value="Red"></property>
+         <property name="fuelcap" value="30.00"></property>
+          <property name="E" ref="engine"></property>
+         </bean>
+          
+        </beans>
