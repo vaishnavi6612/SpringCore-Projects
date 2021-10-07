@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-cintext-4.0.xsd">
+        
+         <bean id="emp1" class="com.vaishnavi.example.Employee">
+          <constructor-arg value="101"></constructor-arg>
+          <constructor-arg value="John"></constructor-arg>
+          <constructor-arg value="8000.00"></constructor-arg>
+         
+         </bean>
+         
+         <bean id="dept" class="com.vaishnavi.example.Department">
+           <constructor-arg value="123"></constructor-arg>
+            <constructor-arg value="AccDept"></constructor-arg>
+         </bean>
+         
+         <bean id="manager" class="com.vaishnavi.example.Manager">
+           <constructor-arg value="emp1"></constructor-arg>
+            <constructor-arg value="dept"></constructor-arg>
+         </bean>
+          
+        </beans>
